@@ -32,14 +32,14 @@
                 <li class="hover:text-[#4f39f6] hover:scale-110 duration-75"><a href="#">Project </a></li>
                 <li class="hover:text-[#4f39f6] hover:scale-110 duration-75"><a href="#">Publications</a></li>
             </ul>
-                 <div onclick="hamburger()" class=" transition-all  rotate-0 text-black sm:block text-2xl md:hidden lg:hidden" id="bars"><i  class="fa-solid fa-bars"></i></div>
+                 <div onclick="hamburger()" class=" transition-all duration-500 ml-30 rotate-0 text-black sm:block  text-2xl md:hidden lg:hidden" id="bars"><i  class="fa-solid fa-bars"></i></div>
         </nav>
 
    
 
         <!-- hamburger -->
 
-        <div class="fixed md:hidden top-0 p-10 transition-all duration-500 ease-in-out bg-[#5541f0]  h-screen  -translate-x-full " id="menu">
+        <div class="fixed md:hidden top-0 p-10 w-72 z-50 transition-all duration-500 ease-in-out bg-[#5541f0]  h-screen  -translate-x-full " id="menu">
    <div class="pt-10 pb-10 flex items-center justify-center sm:pb-10 " > <a href="#" class="text-2xl font-semibold text-white
           bg-clip-text text-transparent text-nowrap hover:scale-110 duration-75">
   Code-Alien 
@@ -55,7 +55,7 @@
         <!-- hero -->
 
         <div class="flex items-center justify-between flex-col">
-            <div class="flex items-center justify-center flex-col mx-48 text-center py-24">
+            <div class="flex items-center justify-center flex-col mx-48 text-center md:py-24 sm:py-5">
                 <p class="text-[#4f39f6] text-2xl pb-[16px]"><i class="fa-regular fa-hand animate-pulse"></i>Hey,There!</p>
                 <p class="text-6xl font-semibold bg-gradient-to-r from-[#2f1bd9] via-[#cd39f6] to-[#cf7cff] hover:from-[#cf7cff] hover:via-[#cd39f6] hover:to-[#2f1bd9]
                 bg-clip-text text-transparent text-nowrap
@@ -81,7 +81,7 @@
              </div>
              <!-- mouse -->
 
-             <div class="my-24 text-5xl text-gray-400 animate-bounce"><i class="fa-solid fa-computer-mouse"></i></div>
+             <div class="md:my-24 my-20 text-5xl text-gray-400 animate-bounce"><i class="fa-solid fa-computer-mouse"></i></div>
 
             </div>
         </div>
@@ -793,15 +793,19 @@
         <div class="py-3 px-6 rounded-full bg-slate-200 text-center">API</div>
       </div>
 
-      <div class="flex flex-row m-auto md:m-0 gap-6">
-        <button class="px-8 py-4 bg-blue-950 rounded-2xl text-white text-lg hover:bg-blue-900">
-          <i class="fa-brands fa-github"></i> Code
-        </button>
+       <div class="flex flex-row md:flex-row items-center gap-6">
 
-        <button class="md:px-8 md:py-4 px-12 py-2  rounded-xl text-[#7d04ff] text-lg border-2 border-[#7d04ff] hover:bg-[#e3d7ef] duration-500">
-          <i class="fa-solid fa-up-right-from-square"></i> Live Demo
-        </button>
-      </div>
+    <a href="https://github.com" target="_blank" aria-label="View GitHub Code"
+       class="flex items-center px-8 py-4 bg-blue-950 text-white rounded-2xl text-lg font-semibold hover:bg-blue-900 transition-colors duration-300 cursor-pointer">
+      <i class="fa-brands fa-github mr-2"></i> Code
+    </a>
+
+
+    <a href="#" target="_blank" aria-label="View Live Demo"
+       class="flex items-center px-8 py-4 rounded-2xl text-[#7d04ff] border-2 border-[#7d04ff] text-lg font-semibold hover:bg-[#e3d7ef] transition-colors duration-300 cursor-pointer">
+      <i class="fa-solid fa-up-right-from-square mr-2"></i> Live Demo
+    </a>
+  </div>
     </div>
   </div>
 
@@ -827,15 +831,19 @@
         <div class="py-3 px-6 rounded-full bg-slate-200 text-center">AI</div>
       </div>
 
-     <div class="flex flex-row m-auto md:m-0 gap-6">
-        <button class="px-8 py-4 bg-blue-950 rounded-2xl text-white text-lg hover:bg-blue-900">
-          <i class="fa-brands fa-github"></i> Code
-        </button>
+    <div class="flex flex-row md:flex-row items-center gap-6">
 
-        <button class="md:px-8 md:py-4 px-12 py-2 rounded-xl text-[#7d04ff] text-lg border-2 border-[#7d04ff] hover:bg-[#e3d7ef] duration-500">
-          <i class="fa-solid fa-up-right-from-square"></i> Live Demo
-        </button>
-      </div>
+    <a href="https://github.com" target="_blank" aria-label="View GitHub Code"
+       class="flex items-center px-8 py-4 bg-blue-950 text-white rounded-2xl text-lg font-semibold hover:bg-blue-900 transition-colors duration-300 cursor-pointer">
+      <i class="fa-brands fa-github mr-2"></i> Code
+    </a>
+
+
+    <a href="#" target="_blank" aria-label="View Live Demo"
+       class="flex items-center px-8 py-4 rounded-2xl text-[#7d04ff] border-2 border-[#7d04ff] text-lg font-semibold hover:bg-[#e3d7ef] transition-colors duration-300 cursor-pointer">
+      <i class="fa-solid fa-up-right-from-square mr-2"></i> Live Demo
+    </a>
+  </div>
     </div>
   </div>
 
@@ -844,7 +852,7 @@
 
 <!-- academic Journey -->
 
-<section class="py-20 mt-20 shadow-xl bg-white">
+<section class="py-20 mt-20 shadow-xl bg-white ">
  <div class="text-center mb-16 px-4">
     <div class=" bg-green-100 rounded-3xl max-w-45 p-3 m-auto text-green-600 font-bold flex items-center justify-evenly">
       <i class="fa-solid fa-graduation-cap"></i> <p>Academic Journey</p></div>
@@ -857,7 +865,11 @@
 
   <div class="max-w-[90%] shadow-2xl rounded-2xl m-auto p-15  hover:shadow-gray-500 duration-500 hover:border-1 hover:border-purple-800 md:ml-5">
     <div class="md:m-auto md:max-w-4 md:max-h-4 md:rounded-full md: text-purple-800 md:text-2xl md:block hidden"><i class="fa-solid fa-circle-dot"></i></div>
-    <p class="mb-5 inline-block px-4 py-2 font-bold bg-blue-100 text-blue-900 text-center rounded-3xl">In Progress</p>
+      <div class="flex justify-center md:justify-start mb-3">
+    <p class="px-4 py-2 font-bold bg-blue-100 text-blue-900 text-center rounded-3xl">
+      In Progress
+    </p>
+  </div>
     <h2 class="font-bold text-2xl mb-2">Bachelor of Science in Computer Science</h2>
     <p class="mb-3 text-blue-700 font-semibold">University Of Information Technology And Sciences</p>
     <div class="flex items-center justify-start gap-2  mb-5 text-gray-500 mt-3">
@@ -926,7 +938,11 @@
 
     <div class="max-w-[90%] shadow-2xl rounded-2xl m-auto p-15 mt-20  hover:shadow-gray-500 duration-500 hover:border-1 hover:border-purple-800">
           <div class="md:m-auto md:max-w-4 md:max-h-4 md:rounded-full md: text-purple-800 md:text-2xl md:block hidden"><i class="fa-solid fa-circle-dot"></i></div>
-    <p class="mb-5 inline-block px-4 py-2 font-bold bg-blue-100 text-blue-900 text-center rounded-3xl">In Progress</p>
+  <div class="flex justify-center md:justify-start mb-3">
+    <p class="px-4 py-2 font-bold bg-blue-100 text-blue-900 text-center rounded-3xl">
+      In Progress
+    </p>
+  </div>
     <h2 class="font-bold text-2xl mb-2">Bachelor of Science in Computer Science</h2>
     <p class="mb-3 text-blue-700 font-semibold">University Of Information Technology And Sciences</p>
     <div class="flex items-center justify-start gap-2  mb-5 text-gray-500 mt-3">
@@ -993,7 +1009,7 @@
 
 <!-- publication and blog -->
 
-<section class="py-20 mt-20 shadow-xl bg-blue-50">
+<section class="py-20 mt-10 md:mt-20 shadow-xl bg-blue-50">
  <div class="text-center my-16 px-4">
     <div class=" bg-blue-100 rounded-3xl max-w-45 p-3 m-auto text-blue-600 font-bold flex items-center justify-evenly">
 <i class="fa-solid fa-book-open"></i> <p>Writing & Research</p></div>
@@ -1109,7 +1125,7 @@
 </div>
 
 
-<div class=" max-w-[90%] m-au md:max-w-[80%] bg-white shadow-2xl hover:shadow-gray-500 duration-500 hover:border-1 hover:border-purple-800 rounded-2xl md:m-auto pt-5">
+<div class=" max-w-[90%] m-auto md:max-w-[80%] bg-white shadow-2xl hover:shadow-gray-500 duration-500 hover:border-1 hover:border-purple-800 rounded-2xl md:m-auto pt-5">
   <div class=" m-10 flex gap-5" >
      <p class="mb-5 inline-block px-4 py-2 font-bold bg-blue-100 text-blue-900 text-center rounded-3xl">Research Paper</p>
       <p class="mb-5 inline-block px-4 py-2 font-bold bg-green-100 text-blue-900 text-center rounded-3xl">Published</p>
